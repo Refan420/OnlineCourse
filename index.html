@@ -33,7 +33,9 @@
             background: linear-gradient(to top left, royalblue, lightgreen, yellow);
         }
 
-        .poster h1 {
+        .poster h1,
+        .Org h1 {
+            text-align: center;
             padding: .4rem;
             font-size: 26px;
             font-family: 'Courier New', Courier, monospace;
@@ -53,6 +55,7 @@
             overflow: hidden;
         }
 
+        .Org,
         .content {
             /* display: flex; */
             margin: .5rem auto;
@@ -61,6 +64,26 @@
             background-color: rgb(1 224 241);
             border-radius: .4rem;
             overflow: hidden;
+        }
+
+        .orgContent {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .childOrg a button {
+            width: 48%;
+            background-color: aqua;
+            border-radius: .3rem;
+            border: none;
+            font-size: 20px;
+            font-weight: 600;
+            height: 3rem;
+
+        }
+
+        .childOrg a button:hover {
+            box-shadow: 1px 0px 7px 1px rgb(250, 229, 112);
         }
 
         .content h2 {
@@ -85,12 +108,15 @@
             ;
         }
 
-        .other,
+
+
+        .other:hover,
         .content ul a li:hover {
             box-shadow: 1px 0px 7px 1px rgb(250, 229, 112);
         }
 
 
+        .childOrg,
         .content ul a li {
             padding: .3rem .5rem;
             margin: .3rem;
@@ -144,6 +170,23 @@
             <span>To touch the <strong style="color: greens;"> Success</strong></span>
         </div>
     </section>
+
+    <div class="Org">
+        <h1>Organization</h1>
+        <div class="orgContent">
+            <div class="childOrg">
+                <h2>As-Sunnah Foundation</h2>
+                <a href="https://assunnahfoundation.org/"><button>Go to Site</button></a>
+                <a href="https://web.facebook.com/assunnahfoundationbd?_rdc=1&_rdr"><button>Go to FB</button></a>
+            </div>
+            <div class="childOrg">
+                <h2>Child & Oldage Care</h2>
+                <a href="https://childandoldagecare.org/"><button>Go to Site</button></a>
+                <a href="https://web.facebook.com/childandoldagecare.org/?_rdc=1&_rdr"><button>Go to FB</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
 
     <div class="content">
         <h2>List of All Topic</h2>
