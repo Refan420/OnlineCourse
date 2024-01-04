@@ -15,6 +15,64 @@
             box-sizing: border-box;
         }
 
+        .cover {
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            opacity: 700%;
+            z-index: 1;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* display: none; */
+        }
+
+        .coverBox {
+            margin: auto;
+            padding: .5rem;
+        }
+
+        .cover input {
+            background-color: red;
+            border-radius: .7rem;
+            border: none;
+            outline: none;
+            padding: .5rem;
+            font-size: 20px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            width: 20rem;
+            height: 2.5rem;
+            text-align: center;
+        }
+
+        .passLabel {
+            color: red;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin: 0rem 1rem;
+        }
+
+        #passBtn {
+            background-color: red;
+            border-radius: 0.7rem;
+            border: none;
+            outline: none;
+            padding: 0.5rem;
+            font-size: 25px;
+            margin: 1rem;
+            color: white;
+            width: 20rem;
+            height: 2.5rem;
+            font-weight: 700;
+            font-family: none;
+        }
+
         body {
             background-image: url(./media/contentbg.jpg);
             background-repeat: no-repeat;
@@ -111,6 +169,7 @@
 
 
         .other:hover,
+        #passBtn:hover,
         .content ul a li:hover {
             box-shadow: 1px 0px 7px 1px rgb(250, 229, 112);
         }
@@ -164,6 +223,14 @@
 
 <body>
 
+    <div class="cover">
+        <div class="coverBox">
+            <h2 class="passLabel">Pass Code please</h2>
+            <input type="password" id="pass" placeholder="Pass Code">
+            <button id="passBtn">Go</button>
+        </div>
+    </div>
+
     <section>
         <div class="poster">
             <h1>Freelancing Online Course</h1>
@@ -176,13 +243,15 @@
         <div class="orgContent">
             <div class="childOrg">
                 <h2>As-Sunnah Foundation</h2>
-                <a href="https://assunnahfoundation.org/"><button>Go to Site</button></a>
-                <a href="https://web.facebook.com/assunnahfoundationbd?_rdc=1&_rdr"><button>Go to FB</button></a>
+                <a target="_blank" href="https://assunnahfoundation.org/"><button>Go to Site</button></a>
+                <a target="_blank" href="https://web.facebook.com/assunnahfoundationbd?_rdc=1&_rdr"><button>Go to
+                        FB</button></a>
             </div>
             <div class="childOrg">
                 <h2>Child & Oldage Care</h2>
-                <a href="https://childandoldagecare.org/"><button>Go to Site</button></a>
-                <a href="https://web.facebook.com/childandoldagecare.org/?_rdc=1&_rdr"><button>Go to FB</button></a>
+                <a target="_blank" href="https://childandoldagecare.org/"><button>Go to Site</button></a>
+                <a target="_blank" href="https://web.facebook.com/childandoldagecare.org/?_rdc=1&_rdr"><button>Go to
+                        FB</button></a>
             </div>
         </div>
     </div>
@@ -192,21 +261,42 @@
         <h2>List of All Topic</h2>
         <div style="display: flex; flex-wrap: wrap;">
             <ul>
-                <a target="_blank" href="https://drive.google.com/drive/folders/1Rl7P3sUpWBj4FxjEsXEUUchhPHm24fZU">
-                    <li>Graphics Design</li>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1S0BSFifSH8dm8AYpXTcIpunBS5QYtHqj?usp=sharing">
+                    <li>Web Design & Developing</li>
                 </a>
-
-                <a target="_blank" href="https://drive.google.com/drive/folders/19s7FMy9GWbq4sfchdJFOjoQFAtMqha3W">
-                    <li>Content Writing</li>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1uM1-onL3yMGJOq7yBzmqOiwPDaFTueZt?usp=sharing">
+                    <li>WP Theme Development</li>
                 </a>
-
-                <a target="_blank" href="https://drive.google.com/drive/folders/19mw-n9GwWnHP7DjZ__p48xrwawufcmUG">
-                    <li>PowerPoint</li>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1241nqSMq7bJZ88Ujb5O7CZFv_Efv8yPO">
+                    <li>Web Design </li>
                 </a>
                 <a target="_blank" href="https://drive.google.com/drive/folders/120PNjeL5d-hWrfX8ODexHT6Nv5iYJMjB">
                     <li>Web Development</li>
                 </a>
-
+                <a target="_blank" href="https://drive.google.com/drive/folders/11Q4CdIuNa3t_opDZCXyWjJWlUGqAYteM">
+                    <li>WordPress</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1xA7BaBwjRVGXbVWlgETl8YH9P2rK6qZs?usp=sharing">
+                    <li>Game Developing</li>
+                </a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/15DZTb3kraSVCRRQnk3duOz1sPPcrK0Ti">
+                    <li>Android App Development</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1hHrGpqfS6wjT3oQArBtJ3bDTpew6K7sX?usp=share_link">
+                    <li>Ethical Hacking</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1KfeSRcbFN7izATQGf6xS5XvCgXT240zF?usp=share_link">
+                    <li>Cyber Security</li>
+                </a>
+                </a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/19CBueP0UebsLL473VfmXEIGhLMEoIiJm">
+                    <li>C Program</li>
+                </a>
                 <a target="_blank"
                     href="https://drive.google.com/drive/folders/1vRS2BslS5MI5c0DNMpQLzm_InNkzQT1p?usp=sharing">
                     <li>SQL for Database</li>
@@ -220,85 +310,154 @@
                     <li>React
                         (Frontend)</li>
                 </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/11Q4CdIuNa3t_opDZCXyWjJWlUGqAYteM">
-                    <li>WordPress</li>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1X8OXeTN3YbG-gTnBRrqLMqrQHTvBtbLh?usp=share_link">
+                    <li>Motion Graphic</li>
                 </a>
                 <a target="_blank"
-                    href="https://drive.google.com/drive/mobile/folders/13syccv3Pj_egBuzW6cuEaPxdxmlxfZDN">
-                    <li>Data Entry
-                        1</li>
-                </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/1EbJRiTyam0HhpE2gY7aF4bcRic08GhLt">
-                    <li>Data Entry 2</li>
+                    href="https://drive.google.com/drive/folders/19xVWC8A-u1lJBru0BS7VV1jgGrGeyLGX?usp=share_link">
+                    <li>Video Editing 1</li>
                 </a>
                 <a target="_blank"
-                    href="https://drive.google.com/drive/mobile/folders/1CsNg2JNCRj3ZHpQITQAtgvstzGqB3Jf7?usp=sharing">
-                    <li>Degital
-                        Marketing 1</li>
+                    href="https://drive.google.com/drive/u/0/folders/1IUyCpp6NL4yxNXnfm-BjsmYAoThm3N7Z?fbclid=IwAR2ERTR5OpiwZS5J84uQUmtMsGBPbNkIOlpvQJUHgo7Ho-myzItvalAQ9r0">
+                    <li>Video Editing 2</li>
                 </a>
-                <a target="_blank" href="https://mega.nz/folder/d5QE2LZC#ihcxwI9mXMbNxBPAM6SwGg">
-                    <li>Degital Marketing 2</li>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1CaJnA8BTWK8OqUX2iS78DwC0omZXdeWt">
+                    <li>Mobile Video Editing</li>
                 </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/19CBueP0UebsLL473VfmXEIGhLMEoIiJm">
-                    <li>C Program</li>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1CaEPJuGbC3vtAwaJcNhqEL9ZeYgSlIU_">
+                    <li>Mobile Video Grephy</li>
                 </a>
                 <a target="_blank"
-                    href="https://drive.google.com/drive/u/0/folders/1S31Ukn2vC71otcA7VSq2dlE9vauuxsOy?fbclid=IwAR31I3QX7CNVnH25krgniXGDsdds22nudmick6PyHcLhuRjnehuG_Qiozjs">
-                    <li>Hand
-                        Writing</li>
+                    href="https://drive.google.com/drive/folders/1bBhCWQSNr9rF71MYNIQ6yBX3cPI2iUYw?usp=share_link">
+                    <li>Graphic Design 1</li>
                 </a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1Rl7P3sUpWBj4FxjEsXEUUchhPHm24fZU">
+                    <li>Graphics Design 2</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1GhP6s9Q8XI7okOY-e8F-g9NK4lxUNAo6?usp=sharing">
+                    <li>T-Shirt Design</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1KuMTkHFIhaqXUJOM8BYONg4oqB6n6Vx7?usp=share_link">
+                    <li>Logo Design 1</li>
+                </a>
+                <a target="_blank" href="https://mega.nz/folder/BFBWhRSZ#kmO9D-n9ew18VWhfAw8HRw">
+                    <li>Logo Design 2</li>
+                </a>
+
                 <a target="_blank"
                     href="https://www.google.com/url?q=https://www.google.com/url?q%3Dhttps://drive.google.com/drive/folders/1KR0F7txvWG60Mipc5pV2C6x26cGPnad0?fbclid%253DIwAR2RqKNUAq4PjUu9_YRUJy4OeKRd7JXJaSH0wIbi-vHrmWOc9YdB6aM6cxY%26amp;sa%3DD%26amp;source%3Deditors%26amp;ust%3D1651764246009812%26amp;usg%3DAOvVaw3mbo0RrXw6LEiolq7CnZJn&sa=D&source=docs&ust=1651764246200078&usg=AOvVaw3uLZ9nyJxHpuFKT2PmaUwC">
                     <li>Illustrative</li>
                 </a>
-
-            </ul>
-            <ul>
-                <a target="_blank" href="https://drive.google.com/drive/folders/15weF5skkPQOcWXIxclfQsUpkfgNq5_8W">
-                    <li>FB Marketing</li>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1rgrSJhAFm3X_kli1wGm4b7V20slfKo4C?usp=sharing">
+                    <li>Autocad</li>
                 </a>
                 <a target="_blank"
-                    href="https://drive.google.com/drive/folders/1GhP6s9Q8XI7okOY-e8F-g9NK4lxUNAo6?usp=sharing">
-                    <li>T-Shirt
-                        Design</li>
+                    href="https://drive.google.com/drive/folders/16XradkXX8MwubDthR5LG8ODgf9CYol-Q?usp=share_link">
+                    <li>YouTubing 1</li>
                 </a>
                 <a target="_blank" href="https://drive.google.com/drive/folders/1-0SLsCApEpDRtsT6Y4eU8WPmQm1t8It-">
-                    <li>YouTubing</li>
+                    <li>YouTubing 2</li>
                 </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/1CaJnA8BTWK8OqUX2iS78DwC0omZXdeWt">
-                    <li>Mobile Video
-                        Editing</li>
-                </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/1CaEPJuGbC3vtAwaJcNhqEL9ZeYgSlIU_">
-                    <li>Mobile Video
-                        Grephy</li>
-                </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/15DZTb3kraSVCRRQnk3duOz1sPPcrK0Ti">
-                    <li>Android App
-                        Development</li>
+
+
+            </ul>
+
+            <!-- Other Line -->
+
+            <ul>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1Y4v9KP2HB2lxxC1P6_YcZwf_binVYy1n?usp=share_link">
+                    <li>Google Ranking</li>
                 </a>
                 <a target="_blank"
-                    href="https://drive.google.com/drive/folders/1uM1-onL3yMGJOq7yBzmqOiwPDaFTueZt?usp=sharing">
-                    <li>WP Theme
-                        Development</li>
+                    href="https://drive.google.com/drive/folders/13Ek2c-H5Seubvvq-7fIRFhcofQf6ylcZ?usp=share_link">
+                    <li>Digital Marketing 1</li>
                 </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/1241nqSMq7bJZ88Ujb5O7CZFv_Efv8yPO">
-                    <li>Web Design </li>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/mobile/folders/1CsNg2JNCRj3ZHpQITQAtgvstzGqB3Jf7?usp=sharing">
+                    <li>Degital Marketing 2</li>
                 </a>
-                <a target="_blank" href="https://mega.nz/folder/BFBWhRSZ#kmO9D-n9ew18VWhfAw8HRw">
-                    <li>Logo Design</li>
+                <a target="_blank" href="https://mega.nz/folder/d5QE2LZC#ihcxwI9mXMbNxBPAM6SwGg">
+                    <li>Degital Marketing 3</li>
                 </a>
-                <a target="_blank" href="https://drive.google.com/drive/folders/1FrL63szocMJUBtC8YkbpEDzHTLyMNjUq">
-                    <li>Affiliate
-                        Marketing</li>
+                <a target="_blank" href="https://drive.google.com/drive/u/2/folders/1BiUimpLkuwMjHwHBS_kymTKROhlpTVdC">
+                    <li>SEO Full</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1kZixgKB6TaAsRNQO1ApPcQ9oNgcG9pAr?usp=share_link">
+                    <li>CPA Marketing 1</li>
                 </a>
                 <a target="_blank" href="https://mega.nz/folder/JJxjyaLC#vdizop3q5h2GbPrt7R4Tsg">
-                    <li>CPA Marketing</li>
+                    <li>CPA Marketing 2</li>
                 </a>
                 <a target="_blank"
-                    href="https://drive.google.com/drive/u/0/folders/1IUyCpp6NL4yxNXnfm-BjsmYAoThm3N7Z?fbclid=IwAR2ERTR5OpiwZS5J84uQUmtMsGBPbNkIOlpvQJUHgo7Ho-myzItvalAQ9r0">
-                    <li>Video
-                        Editing</li>
+                    href="https://drive.google.com/drive/folders/1TE_U7ESRu60EUm5YUMphMJ3NPd11uPWx?usp=sharing">
+                    <li>Affiliate Marketing 1</li>
+                </a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1FrL63szocMJUBtC8YkbpEDzHTLyMNjUq">
+                    <li>Affiliate Marketing 2</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1AUmxxDHShun0Py-AejwcS14F0ddlHiEk?usp=share_link">
+                    <li>FB Marketing 1</li>
+                </a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/15weF5skkPQOcWXIxclfQsUpkfgNq5_8W">
+                    <li>FB Marketing 2</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/13EAqA5Vjv1JYmxdbsi0hFm0dBdhEe_Hd?usp=share_link">
+                    <li>MS Word</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/19z9VmSK1NuM572K2m7ejNJ8h0BSV9dPd?usp=share_link">
+                    <li>MS Excel</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1CQvyivH7krv1JHVX_8TiuXsjyX5aFC_q?usp=share_link">
+                    <li>MS PowerPoint 1</li>
+                </a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/19mw-n9GwWnHP7DjZ__p48xrwawufcmUG">
+                    <li>MS PowerPoint 2</li>
+                </a>
+
+                <a target="_blank"
+                    href="https://drive.google.com/drive/mobile/folders/13syccv3Pj_egBuzW6cuEaPxdxmlxfZDN">
+                    <li>Data Entry 1</li>
+                </a>
+                <a target="_blank" href="https://drive.google.com/drive/folders/1EbJRiTyam0HhpE2gY7aF4bcRic08GhLt">
+                    <li>Data Entry 2</li>
+                </a>
+
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/17yzIdHQCDh4nMEWwSDIaXCQoCB-YjmVW?usp=sharing">
+                    <li>Data Entry 3</li>
+                </a>
+
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/13eG1I_o7Q3sioGNbuf5rgxws-J_fqVUy?usp=share_link">
+                    <li>Content Writing 1</li>
+                </a>
+
+                <a target="_blank" href="https://drive.google.com/drive/folders/19s7FMy9GWbq4sfchdJFOjoQFAtMqha3W">
+                    <li>Content Writing 2</li>
+                </a>
+                <a target="_blank" href="https://drive.google.com/folderview?id=1dgkfYgaG9HksnFL1MWyTH8ivwPb8CFev">
+                    <li>Book Gallery 1</li>
+                </a>
+                <a target="_blank" href="https://drive.google.com/folderview?id=1Zgm8lDTVvUFnU8p35kh4bRSObt-iJIrh">
+                    <li>Bok Gallery 2</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1xEwrps967b3Lba54yY5ya4ZGx-5RbB49?usp=drive_link">
+                    <li>English Speaking</li>
+                </a>
+                <a target="_blank"
+                    href="https://drive.google.com/drive/u/0/folders/1S31Ukn2vC71otcA7VSq2dlE9vauuxsOy?fbclid=IwAR31I3QX7CNVnH25krgniXGDsdds22nudmick6PyHcLhuRjnehuG_Qiozjs">
+                    <li>Hand Writing</li>
                 </a>
                 <a target="_blank"
                     href="https://drive.google.com/drive/folders/1eMokBKVRw-8BNtFe5RF93V_dVcQD8-QJ?fbclid=IwAR1ndD2ZhT6jvEGFeUJvRJGPrdAySf38SqG8Rj1XErmP9FlQQ8tCMBtCOsM&sort=13&direction=a">
@@ -308,6 +467,11 @@
                 <a target="_blank"
                     href="https://drive.google.com/drive/mobile/folders/1ZKM0pEdKskoeFOe_hTx746QvNT4B3JL7?fbclid=IwAR2pnsgmkLzSVNqRep9leITrj4OGF_3SwOcVN4xwrjHJjmcBuxb0cEdIk">
                     <li>Fiverr</li>
+                </a>
+
+                <a target="_blank"
+                    href="https://drive.google.com/drive/folders/1xcJjwh_FKdUwrG2kV0Tq1Ir4wO3NoiVa?usp=share_link">
+                    <li>Fiverr Success</li>
                 </a>
 
                 <a target="_blank" href="https://drive.google.com/drive/folders/1l5IXlsPfzH8UenMC4tB82dVzFXPn1prI">
@@ -325,6 +489,61 @@
     <div class="footer">
         <h2 style="color: white;">Made By <span style="color: lightgray;">Md. Refan</span></h2>
     </div>
+
+    <script>
+        const cover = document.querySelector(".cover");
+        const goBtn = document.querySelector("#passBtn")
+        const pass = document.querySelector("#pass");
+        goBtn.addEventListener("click",
+            function passit() {
+                if (pass.value == '60743632') {
+                    cover.style.display = "none";
+                } else {
+                    alert("Please Try again!!")
+                }
+            });
+
+
+
+        // Desible Inspect
+
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
+
+        document.onkeydown = (e) => {
+            if (
+                e.keyCode === 123 || // F12
+                ctrlShiftKey(e, 'I') || // Ctrl+Shift+I
+                ctrlShiftKey(e, 'J') || // Ctrl+Shift+J
+                ctrlShiftKey(e, 'C') || // Ctrl+Shift+C
+                (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0)) // Ctrl+U
+            ) {
+                return false;
+            }
+        };
+
+        function ctrlShiftKey(e, keyCode) {
+            return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+        }
+
+
+        setInterval(() => {
+            try {
+                window.oncontextmenu = null;
+                window.onkeydown = null;
+                window.onmousedown = null;
+                window.onmouseup = null;
+                window.onbeforeunload = null;
+                // Add more events as needed
+            } catch (e) { }
+        }, 100); // Check every 100 milliseconds
+
+
+
+
+
+    </script>
 
 </body>
 
